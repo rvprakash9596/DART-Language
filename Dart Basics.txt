@@ -221,9 +221,3 @@ Standard Output in Dart: In dart, there are two ways to display output in the co
 
 1. The print() statement brings the cursor to next line
 2. stdout.write() don’t bring the cursor to the next line, it remains in the same line.
-
-
-
-
-
-
