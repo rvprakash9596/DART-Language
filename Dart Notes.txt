@@ -81,9 +81,104 @@ Note :The dart program can also be compile through terminal by executing the cod
 
 Comments : Comments are the non executable statements.
 ---------
-Two types comments: 
-1.Single line comments
-2.Multiline line comments
+Types of Dart Comments: 
+
+1.Dart Single line Comment.
+2.Dart Multiline Comment.
+3.Dart Documentation Comment.
+
+
+Dart Variable:
+==============
+A variable name is the name assigned to the memory location where the user stores the data and that data can be fetched when required with the help of the variable by calling its variable name.
+
+
+Syntax: To declare a variable: 
+------------------------------
+type variable_name;
+
+Syntax: To declare multiple variables of the same type: 
+-------------------------------------------------------
+type variable1_name, variable2_name, variable3_name, ....variableN_name;
+
+
+Type of the variable can be among: 
+----------------------------------
+1.Static Variable
+2.Dynamic Variable
+3.Final or const
+
+
+
+Dynamic Type Variable in Dart:
+------------------------------
+This is a special variable initialised with keyword dynamic. The variable declared with this data type can store implicitly any value during running the program. It is quite similar to var datatype in Dart, but the difference between them is the moment you assign the data to variable with var keyword it is replaced with the appropriate data type. 
+
+Syntax: 
+--------
+dynamic variable_name;
+
+Example :
+----------
+void main(){
+  dynamic v1="Ravi Prakash";
+  print(v1);
+  
+  v1=3.14157;
+  print(v1);
+}
+
+output 
+-------
+Ravi Prakash
+3.14157
+
+
+Final And Const Keyword in Dart:
+--------------------------------
+These keywords are used to define constant variable in Dart .
+i.e. once a variable is defined using these keyword then its value can’t be changed in the entire code. 
+These keyword can be used with or without data type name.
+
+1. Final : A final variable can only be set once and it is initialized when accessed.
+
+Syntax for Final:
+----------------
+// Without datatype
+final variable_name
+
+// With datatype
+final data_type  variable_name
+
+
+How to assign null value to variable in Dart?
+---------------------------------------------
+To declare a variable as nullable, you append a ‘?' to the type of the variable.
+The declared variable will by default store null as value and even after assigning it values of your choice you can declare it as null afterwards.
+Example :
+---------
+void main() {
+   int? a;
+   a=null;
+   print(a);
+}
+
+Operators in Dart:
+------------------
+The operators are special symbols that are used to carry out certain operations on the operands.
+
+Different types of operators in Dart:
+------------------------------------
+1.Arithmetic Operators
+2.Relational Operators
+3.Type Test Operators
+4.Bitwise Operators
+5.Assignment Operators
+6.Logical Operators
+7.Conditional Operators
+8.Cascade Notation Operators:
+
+
 
 
 Data Types :
