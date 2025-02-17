@@ -1,0 +1,33 @@
+Extension = abc.dart
+
+First Dart Program =>
+---------------------
+void main(){
+    print("Hello Dart Bhai"); // Print method doesn't provide new line
+    stdout.write("Hello g kaise ho"); // always provides new line
+}
+
+stdout= Standard Output
+
+stdout.write(" "); // always provides new line
+print(" "); // doesn't provide new line
+
+stdin.readLineSync()!
+---------------------
+stdin.readLineSync()!= reads perticular line . its a function , takes string values only
+---------------------
+void main() = Nothing returns
+
+int main() = returns integer values
+
+main() =  program starts from main function
+
+() = parenthesis , isme hm parameters pass krte hain
+
+{} iska mtlb hota hai ki mera jo program hai wo is curly bracets k andar se start hoga
+
+! = null check // iska mtlb koi bhi value user se null nhi aayega
+? = question mark // iska mtlb ki value null aa bhi sakti hai aur nhi bhi aa sakti hai
+
+
+
