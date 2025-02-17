@@ -1,0 +1,229 @@
+Introduction to Dart Programming Language :
+-------------------------------------------
+
+Dart is an open-source programming language originally developed by Google. 
+It is meant for both the server side as well as the user side. 
+The Dart SDK comes with its compiler – the Dart VM and a utility dart2js which is meant for generating the Javascript equivalent of a Dart Script so that it can be run on those sites also which don’t support Dart. 
+
+Note: Dart is an Object-oriented language and is quite similar to that of Java Programming. Dart is extensively used to create single-page websites and web applications. 
+The Best example of a dart application is Gmail.
+
+Features of Dart Programming Language :
+--------------------------------------
+
+Easy to Understand:
+------------------
+Dart because of its similarities with C# and Java user often find the Dart Syntax Familiar , Also, as it provides the code Reuse it makes the Programs clean and easy to understand.
+Object Oriented Programming:
+---------------------------
+Nowadays OOPS is considered as one of the most important feature for many Programming Language including Java and C++. Now, Dart which is following the same path of OOPS .
+Open Source:
+------------ 
+As Dart is Open Source which makes it quite popular between the Indivisual and also for few big Organisations.
+Browser Support:
+----------------
+Dart Supported by all the browser because of its dart2js compiler that converts dart Program into JavaScript code which can be further processed by all the modern web browsers.
+Type Safe:
+---------
+Dart is considered as type safe as it is the combination of static and runtime checks to ensure the variable value matches the variable type.
+Flexible Compilation and Execution: 
+-----------------------------------
+Dart Compilation is flexible as it supports both JIT(Just-in-Time) compilation as well as AOT(Ahead of Time) compilation. And dart2js adds extra value to it.
+Asynchronous Programming:
+-------------------------
+Dart Supports Asynchronous Programming is where even when a Primary set of tasks are running , Program will respond to other set of tasks and at the end of the execution a final result will be returned.
+
+
+
+Dart Programming Language for Flutter :
+=======================================
+Flutter is a open sourceSDK(Software Development Kit) provided by Google for creating Native Interfaces. Flutter Framework which creates Flutter Applications for Android , Web and IOS uses Dart as its official Programming Language. Where Dart helps Flutter to avoid the need of separate declarative layout languages( i.e. JSX and XML) , as the layout of Dart has redability which makes it user friendly.
+
+Note: Flutter is a popular for FrontEnd development.
+-----
+
+
+Extension = abc.dart
+
+First Dart Program =>
+---------------------
+void main(){
+    print("Hello Dart Bhai"); // Print method doesn't provide new line
+    stdout.write("Hello g kaise ho"); // always provides new line
+}
+
+stdout= Standard Output
+
+stdout.write(" "); // don’t bring the cursor to the next line, it remains in the same line.
+print(" "); // always provides new line / brings the cursor to next line.
+
+stdin.readLineSync()!
+---------------------
+Note : stdin.readLineSync()!= reads perticular line . its a function , takes string values only.
+
+void main() = Nothing returns
+
+int main() = returns integer values
+
+main() =  program starts from main function
+
+() = parenthesis , isme hm parameters pass krte hain
+
+{} iska mtlb hota hai ki mera jo program hai wo is curly bracets k andar se start hoga
+
+! = null check // iska mtlb koi bhi value user se null nhi aayega
+? = question mark // iska mtlb ki value null aa bhi sakti hai aur nhi bhi aa sakti hai
+
+
+Note :The dart program can also be compile through terminal by executing the code dart file_name.dart. 
+
+
+Comments : Comments are the non executable statements.
+---------
+Types of Dart Comments: 
+
+1.Dart Single line Comment.
+2.Dart Multiline Comment.
+3.Dart Documentation Comment.
+
+
+Dart Variable:
+==============
+A variable name is the name assigned to the memory location where the user stores the data and that data can be fetched when required with the help of the variable by calling its variable name.
+
+
+Syntax: To declare a variable: 
+------------------------------
+type variable_name;
+
+Syntax: To declare multiple variables of the same type: 
+-------------------------------------------------------
+type variable1_name, variable2_name, variable3_name, ....variableN_name;
+
+
+Type of the variable can be among: 
+----------------------------------
+1.Static Variable
+2.Dynamic Variable
+3.Final or const
+
+
+
+Dynamic Type Variable in Dart:
+------------------------------
+This is a special variable initialised with keyword dynamic. The variable declared with this data type can store implicitly any value during running the program. It is quite similar to var datatype in Dart, but the difference between them is the moment you assign the data to variable with var keyword it is replaced with the appropriate data type. 
+
+Syntax: 
+--------
+dynamic variable_name;
+
+Example :
+----------
+void main(){
+  dynamic v1="Ravi Prakash";
+  print(v1);
+  
+  v1=3.14157;
+  print(v1);
+}
+
+output 
+-------
+Ravi Prakash
+3.14157
+
+
+Final And Const Keyword in Dart:
+--------------------------------
+These keywords are used to define constant variable in Dart .
+i.e. once a variable is defined using these keyword then its value can’t be changed in the entire code. 
+These keyword can be used with or without data type name.
+
+1. Final : A final variable can only be set once and it is initialized when accessed.
+
+Syntax for Final:
+----------------
+// Without datatype
+final variable_name
+
+// With datatype
+final data_type  variable_name
+
+
+How to assign null value to variable in Dart?
+---------------------------------------------
+To declare a variable as nullable, you append a ‘?' to the type of the variable.
+The declared variable will by default store null as value and even after assigning it values of your choice you can declare it as null afterwards.
+Example :
+---------
+void main() {
+   int? a;
+   a=null;
+   print(a);
+}
+
+Operators in Dart:
+------------------
+The operators are special symbols that are used to carry out certain operations on the operands.
+
+Different types of operators in Dart:
+------------------------------------
+1.Arithmetic Operators
+2.Relational Operators
+3.Type Test Operators
+4.Bitwise Operators
+5.Assignment Operators
+6.Logical Operators
+7.Conditional Operators
+8.Cascade Notation Operators:
+
+
+Dart – Standard Input Output :
+==============================
+
+Standard Input in Dart:
+----------------------
+In Dart programming language, you can take standard input from the user through the console via the use of .readLineSync() function.
+To take input from the console you need to import a library, named dart:io from libraries of Dart.
+
+About Stdin Class: 
+------------------
+This class allows the user to read data from standard input in both synchronous and asynchronous ways. The method readLineSync() is one of the methods used to take input from the user. 
+
+Example:
+--------
+// importing dart:io file
+import 'dart:io';
+
+void main()
+{
+    print("Enter your name?");//Ravi Prakash 
+    String? name = stdin.readLineSync(); // null safety in name string
+
+    print("Hello, $name! \nWelcome to Dart World!!");
+}
+
+Taking integer value as input:
+-----------------------------
+
+import 'dart:io';
+void main(){
+    print("Enter a numer :");
+    int? nm=int.parse(stdin.readLineSync()!);
+    print("Your number is $nm");
+}
+
+Standard Output in Dart: In dart, there are two ways to display output in the console.
+------------------------
+
+1. Using print() statement.
+2. Using stdout.write() statement.
+
+1. The print() statement brings the cursor to next line
+2. stdout.write() don’t bring the cursor to the next line, it remains in the same line.
+
+
+
+
+
+
