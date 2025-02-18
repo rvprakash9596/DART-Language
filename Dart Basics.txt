@@ -163,7 +163,7 @@ void main() {
 }
 
 Operators in Dart:
-------------------
+==================
 The operators are special symbols that are used to carry out certain operations on the operands.
 
 Different types of operators in Dart:
