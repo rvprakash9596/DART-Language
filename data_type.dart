@@ -1,4 +1,3 @@
-import 'dart:io';
 void main(){
   //1. Number data types
   /*stdout.write("Enter 1st Number :");
