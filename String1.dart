@@ -12,6 +12,14 @@ void main()
 
   */
 
+    /*
+    String str="RaviPrakash4344";
+    String str2="SaurabhCaterersKLD";
+    print(str);
+    print(str2);
+    print(str+str2);
+    */
+
   var s1="RAVI";
   var s2="RAVI";
   if(s1==s2){
