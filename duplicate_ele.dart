@@ -1,7 +1,7 @@
 void findDuplicates(List<int> arr) {
   Set<int> seen = {};
   Set<int> duplicates = {};
-
+ 
   for (int num in arr) {
     if (!seen.add(num)) {
       duplicates.add(num);
